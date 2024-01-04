@@ -1,0 +1,25 @@
+.project-container {
+  background-color: #ffffff;
+  height: 250px;
+  width: 60vw;
+  margin-top: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-details {
+  width: 50%;
+}
+.project-container:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.project-link {
+  text-decoration: none;
+}
+.project-image {
+  aspect-ratio: 1;
+  width: 250px;
+  border-radius: 10px;
+}
