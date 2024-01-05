@@ -3,6 +3,7 @@ import Project from "../project";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 // import {"attachment.jpg"} from '../../public.images'
+// import wave-haikei.svg as wave from ../../public'
 
 import "./index.css";
 
@@ -38,6 +39,7 @@ class Home extends Component {
       },
     ],
   };
+  0;
 
   onProjectNameChange = (event) => {
     this.setState({ projectName: event.target.value });
@@ -102,9 +104,17 @@ class Home extends Component {
             </div>
           </div>
           <div className="image-container">
-            <img alt="profile" className="profile-image" src="" />
+            <img
+              alt="profile"
+              className="profile-image"
+              src="https://res.cloudinary.com/dgcysjarm/image/upload/v1704436288/attachment_cdidiq.png"
+            />
           </div>
         </div>
+        <img
+          alt="wave"
+          src="https://res.cloudinary.com/dgcysjarm/image/upload/v1704437244/Vector_b8iprz.png"
+        />
         <div className="add-project-section">
           <h1>Add Project</h1>
           <form onSubmit={this.onSubmitForm}>
@@ -138,9 +148,8 @@ class Home extends Component {
               type="text-box"
               rows="4"
               cols="50"
-            >
-              {description}
-            </textarea>
+              value={description}
+            ></textarea>
             <button className="add-button" type="submit">
               Add
             </button>
@@ -171,6 +180,11 @@ class Home extends Component {
             </a>
           </ul>
           <p>Copyright © 2024. All rights reserved</p>
+          <img
+            alt="wave"
+            className="footer-wave"
+            src="https://res.cloudinary.com/dgcysjarm/image/upload/v1704437244/Vector_b8iprz.png"
+          />
         </footer>
       </div>
     );

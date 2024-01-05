@@ -4,7 +4,6 @@ import "./index.css";
 const Project = (props) => {
   const { details } = props;
   const { name, link, description, imageUrl } = details;
-  console.log(imageUrl);
   return (
     <li className="project-container">
       <div className="project-details">

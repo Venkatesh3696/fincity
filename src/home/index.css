@@ -1,11 +1,17 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 1920;
+  height: 1080;
+}
 .app-container {
   width: 100vw;
-  min-height: 100vh;
   background-color: #f9faff;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  overflow-x: hidden;
 }
 .header {
   display: flex;
@@ -22,11 +28,11 @@
   width: 40vw;
 }
 .section-1 {
-  width: 100%;
+  width: 100vw;
   height: 350px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 /* .list-item {
@@ -51,8 +57,10 @@
   justify-content: center;
   align-items: center;
 }
+#visual {
+}
+
 .image-container {
-  background-color: #fdc435;
   width: 50%;
   height: 100%;
 }
@@ -107,4 +115,7 @@ a {
   justify-content: center;
   align-items: center;
   list-style-type: none;
+}
+.footer-wave {
+  width: 100%;
 }
